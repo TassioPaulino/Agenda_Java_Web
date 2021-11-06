@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Novo Contato</title>
+<link rel="icon" href="imagens/title_agenda.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form name="frm_contato" action="adcionar">
+		<table>
+			<tr>
+				<td class="td_frm"><input type="text" class="input_a input_b" placeholder="Nome" name="nome" ></td>
+			</tr>
+			<tr>
+				<td class="td_frm"><input type="text" class="input_a input_c " placeholder="Fone" name="fone"></td>
+			</tr>
+			<tr>
+				<td class="td_frm"><input type="text" class="input_a input_b" placeholder="E-mail" name="email"></td>
+			</tr>
+			<tr>
+				<td class="td_frm">
+					<input type="button" value="Adcionar" onclick="sanitizarDados()" class="btn btn_green">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<script src="scripts/sanitizador.js"></script>
+	<script src="scripts/btn_dynamic_color_green.js"></script>
+</body>
+</html>
